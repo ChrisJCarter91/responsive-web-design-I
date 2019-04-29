@@ -68,144 +68,10 @@ h1, h2, h3, h4, h5 {
 /* Your code starts here! */
 
 .container {
-	width: 1000px;
+	max-width: 1000px;
 	height: 1200px;
-	margin: auto;
+	margin: 0 auto;
 	border: 2px solid red;
-}
-
-nav a {
-	margin: 0 30px;
-	margin-top: 10px;
-}
-
-p {
-	width: 450px;
-}
-
-
-.logo {
-	display: inline-block;
-	margin-top: 10px;
-	margin-left: 105px;
-}
-
-h1 {
-    display: inline-block;
-    width: 18%;
-    font-size: 400%;
-    text-align: center;
-    margin-left: 175px;
-    margin-top: 71px;
-    float: left;
-}
-
-h3 {
-	display: inline-block;
-	margin-top: 25px;
-}
-
-.topP {
-	padding: 5px;
-	margin-bottom: 15px;
-}
-
-.bottomP {
-	display: inline-block;
-	width: 300px;
-
-}
-
-.roundLogo {
-    margin-top: 50px;
-    display: inline-block;
-    max-width: 280px;
-    margin-left: 175px;
-}
-
-.paragraphs {
-	display: inline-block;
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;
-	margin: 20px;
-	text-align: left;
-}
-
-.bottom {
-	display: inline-block;
-	margin-bottom: 25px;
-}
-
-
-.features {
-	display: inline-block;
-	max-width: 300px;
-	box-sizing: border-box;
-}
-
-.about {
-	display: inline-block;
-	max-width: 420px;
-	box-sizing: border-box;
-	margin-left: 200px;
-}
-
-.services {
-    display: inline-block;
-    max-width: 300px;
-    box-sizing: border-box;
-	
-}
-
-.product {
-    display: inline-block;
-    max-width: 300px;
-    box-sizing: border-box;
-    margin-left: 25px;
-}
-
-.vision {
-    display: inline-block;
-    max-width: 300px;
-    box-sizing: border-box;
-    margin-left: 23px;
-}
-
-.middle-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-}
-
-.contact {
-	display: block;
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
-
-.address {
-	width: 200px;
-	margin-bottom: 20px;
-}
-
-.phone {
-	width: 200px;
-	margin-bottom: 10px;
-}
-
-.email {
-	width: 200px;
-	margin-bottom: 10px;
-}
-
-.footer {
-    display: flex;
-    justify-content: center
-	margin-left: 45%;
-	font-size: 75%;
-	width: 1000px;
-    margin: auto;
 }
 
 header {
@@ -303,6 +169,58 @@ border-top: 2px solid black;
 	justify-content: center;
 }
 
+/* Viewport coding starts here */
+
+@media(max-width: 800px) {
+    .container {
+        width: 800px;
+        background: lightgray;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    nav {
+        display: flex;
+        align-self: stretch;
+    }
+
+    .roundLogo {
+        display: none;
+    }
+
+    .middle-img {
+        width: 75%;
+    }
+}
+
+@media(max-width: 500px) {
+    .container {
+        width: 500px;
+        background: green;
+    }
+
+    .header {
+        display: flex;
+    }
+
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    a {
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+
+
+}
+
 
 
 /* SERVICES */
@@ -352,13 +270,12 @@ h2 {
 	align-content: space-between;
 	flex-direction: column;
 	flex-wrap: wrap;
-	/* border: 2px solid blue; */
 	padding: 5px;
 }
 
 .bottom-section {
-	/* border: 1px solid black; */
     width: 400px;
 	height: 200px;
 	padding: 15px;
 }
+
