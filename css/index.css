@@ -69,7 +69,6 @@ h1, h2, h3, h4, h5 {
 
 .container {
 	max-width: 1000px;
-	height: 1200px;
 	margin: 0 auto;
 	border: 2px solid red;
 }
@@ -90,7 +89,14 @@ header nav {
 	justify-content: flex-end;
 	justify-content: space-evenly;
 	flex-wrap: nowrap;
-	align-items: center;
+    align-items: center;
+}
+
+button {
+    margin-left: 30%;
+    width: 120px;
+    height: 30px;
+    border-radius: 10%;
 }
 
 h1 {
@@ -98,6 +104,10 @@ h1 {
 	flex-direction: column;
 	align-items: center;
 	font-size: 450%;
+}
+
+h3 {
+    margin-top: 20px;
 }
 
 
@@ -119,7 +129,11 @@ border-top: 2px solid black;
 
 .mid {
 	display: flex;
-	justify-content: space-around;
+    justify-content: space-around;
+}
+
+p {
+    margin-bottom: 20px;
 }
 
 
@@ -147,26 +161,26 @@ border-top: 2px solid black;
 .contact {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
-	width: 30%;
-	height: 125px;
+    width: 30%;
+    margin-left: 30px;
 }
 
 .address {
-	width: 55%
+	width: 100%
 }
 
 .phone {
-	width: 45%;	
+	width: 100%;	
 }
 
 .email {
-	width: 45%;
+	width: 100%;
 }
 
 .footer {
 	display: flex;
-	justify-content: center;
+    justify-content: center;
+    font-size: 80%;
 }
 
 /* Viewport coding starts here */
@@ -175,6 +189,7 @@ border-top: 2px solid black;
     .container {
         width: 800px;
         background: lightgray;
+        margin: 0 auto;
     }
 
     header {
@@ -192,8 +207,12 @@ border-top: 2px solid black;
         display: none;
     }
 
+    .title {
+        margin-top: 20px;
+    }
+
     .middle-img {
-        width: 75%;
+        width: 100%;
     }
 }
 
@@ -201,21 +220,101 @@ border-top: 2px solid black;
     .container {
         width: 500px;
         background: green;
+        margin: 0 auto;
     }
 
-    .header {
+    header nav {
         display: flex;
-    }
-
-    nav {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
+    nav {
+        font-size: 200%;
+    }
+
     a {
-        border-top: 2px solid black;
+        align-self: stretch;
+        text-align: center;
         border-bottom: 2px solid black;
+        padding: 10px;
+    }
+
+
+    .topParagraphs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .features {
+        flex-grow: 0;
+        width: 75%;
+    }
+    
+    .about {
+        flex-grow: 0;
+        width: 75%;
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services {
+        flex-grow: 0;
+        width: 75%;
+    }
+    
+    .product {
+        flex-grow: 0;
+        width: 75%;
+    }
+    
+    .vision {
+        flex-grow: 0;
+        width: 75%;
+    }
+
+    .middle-img {
+        width: 90%;
+    }
+
+    p {
+        width: 100%;
+    }
+
+    .contact {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        width: 100%;
+        margin-left: 12%;
+    }
+
+    .address {
+        flex-grow: 0;
+        width: 75%;
+    }
+
+    .phone {
+        flex-grow: 0;
+        width: 75%;
+    }
+
+    .email {
+        flex-grow: 0;
+        width: 75%;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 12%
     }
 
 
